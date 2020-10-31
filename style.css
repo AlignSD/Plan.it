@@ -44,7 +44,7 @@ textarea{
 .hour {
   background-color: white;
   color: black;
-  font-size: 2em;
+  font-size: 1.5vw;
   letter-spacing: .25em;
   text-align: center;
   /* align-self: center; */
@@ -74,8 +74,8 @@ textarea{
 }
 .btn {
   background-color: darkcyan;
-  font-size: 2em;
-  letter-spacing: .25em;
+  font-size: 2vw;
+  letter-spacing: .25rem;
 }
 .saveBtn {
   border-left: 1px solid black;
@@ -85,7 +85,7 @@ textarea{
   color: #07c9cf;
   padding: 10px;
   margin: 10px;
-  font-size: 2em;
+  font-size: 5vw;
 }
 
 .saveBtn i:hover {
@@ -107,10 +107,8 @@ textarea{
 .col-md-11 {width: 91.66%;}
 .col-md-12 {width: 100%;}
 /* media query for text area height */
-@media only screen and (max-width: 768px) {
-  textarea {
-    
-    height:100%
+ @media (max-width: 767px) {
+  body {
+      width: 150% ;
   }
 }
-
