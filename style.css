@@ -2,6 +2,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-color: slategray;
 }
 
 textarea{
@@ -10,13 +11,13 @@ textarea{
   resize: none;
   color: #000000;
   border-left: 1px solid black;
-  padding: 10px;
-  margin: 10px;
+  padding: 5px;
+  margin-bottom: 10px;
 }
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
+  background-color: slategray;
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
@@ -29,11 +30,11 @@ textarea{
 .time-block{
   text-align: center;
   border-radius: 15px;
-  background-color: indianred;
+  background-color: transparent;
 }
 
 .row {
-  white-space: pre-wrap;
+  white-space: normal;
   height: 80px;
   border-top: 1px solid white;;
 }
@@ -74,3 +75,24 @@ textarea{
   transition: all .3s ease-in-out;
   background-color: green;
 }
+/* column resize */
+.col-md-1 {width: 10.33%;}
+.col-md-2 {width: 16.66%;}
+.col-md-3 {width: 25%;}
+.col-md-4 {width: 33.33%;}
+.col-md-5 {width: 41.66%;}
+.col-md-6 {width: 50%;}
+.col-md-7 {width: 58.33%;}
+.col-md-8 {width: 66.66%;}
+.col-md-9 {width: 75%;}
+.col-md-10 {width: 83.33%;}
+.col-md-11 {width: 91.66%;}
+.col-md-12 {width: 100%;}
+/* media query for text area height */
+@media only screen and (max-width: 768px) {
+  textarea {
+    
+    height:75%;
+  }
+}
+

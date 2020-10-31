@@ -1,32 +1,13 @@
  $(document).ready(function () {
 
-// var now = moment();
-// var currentMonth = moment()
-// const startWeek = moment().startOf('month').week();
-// const endWeek = moment().endOf('month').week();
 
-
-// let calendar = []
-// for(var week = startWeek; week<endWeek;week++){
-//   calendar.push({
-//     week:week,
-//     days:Array(7).fill(0).map((n, i) => moment().week(week).startOf('week').clone().add(n + i, 'day'))
-//   })
-// }
-
-// document.getElementsByClassName("container");
-
-
-
-
-
-// // need to construct header with current date displayed.
-
+// set var for current time in military 
 $("#currentDay").text(moment().format('MMMM Do YYYY, h:mm:ss a'));
 var currentHour = moment().format('H');
-$("#currentDay").append(currentHour);
-console.log(currentHour);
+// $("#currentDay").append(currentHour);
+// console.log(currentHour);
 
+// vars for each hour displayed in time-blocks to hold number of the hour.
 var rowHour7a = 7;
 var rowHour8a = 8;
 var rowHour9a = 9;
@@ -44,11 +25,13 @@ var rowHours = [7,8,9,10,11,12,13,14,15,16,17,18,19];
 console.log(rowHour7p);
 // for (let i = 0; i<rowHours.length; i++){
 
-
+// if current hour is less than current hour apply past class to id
 if (rowHour7a < currentHour) {
   $('#7').addClass('past');
+  // else if the rowHour is equal to the current hour add pressent class
 } else if (rowHour7a == currentHour) {
   $('#7').addClass('present');
+  // else add future class because its neither less than or equal to
 } else {
   $('#7').addClass('future');
 }
