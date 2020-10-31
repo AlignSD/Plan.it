@@ -37,7 +37,7 @@ textarea{
 .row {
   white-space: normal;
   height: 80px;
-  border-top: 1px solid white;
+  border-top: 1px solid black;
   
 }
 
@@ -52,6 +52,7 @@ textarea{
   flex-direction:row ;
   justify-content: center;
   align-items:center;
+  border: 1px solid black;
   
 }
 
@@ -76,6 +77,7 @@ textarea{
   background-color: darkcyan;
   font-size: 2vw;
   letter-spacing: .25rem;
+  border: 1px solid black;
 }
 .saveBtn {
   border-left: 1px solid black;
