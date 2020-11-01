@@ -23,7 +23,7 @@ var rowHour6p = 18;
 var rowHour7p = 19;
 var rowHours = [7,8,9,10,11,12,13,14,15,16,17,18,19];
 console.log(rowHour7p);
-// for (let i = 0; i<rowHours.length; i++){
+
 
 // if current hour is less than current hour apply past class to id
 if (rowHour7a < currentHour) {
@@ -120,19 +120,13 @@ if (rowHour7p < currentHour) {
   $('#19').addClass('future');
 }
 
-// need to create timeblocks for days of the month
 
-// change blocks color for past present and future
-
-// target.Onclick each timeblock and allow user to input an event
-
-// store data when user clicks save
 
 
 // when the page refreshes the calendar stays filled out
-// localStorage.setItem("data",JSON.stringify(data));
-// var data= JSON.parse(localStorage.getItem("data"));
 
+
+// make var to hold time-slot data
 var timeSlotArray =$(".time-slot");
 for (let i = 7; i < timeSlotArray.length + 7; i++) {
   // check if null
